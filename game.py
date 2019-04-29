@@ -1,3 +1,4 @@
+import random
 RanNum = random.randint(0,1000)
 while true:
 	number = int(input("Напишите число"))
