@@ -1,7 +1,7 @@
 import random
 RanNum = random.randint(0,1000)
 while True:
-	number = int(input("Напишите число"))
+	number = int(input("Напишите число \n"))
 	if number == RanNum:
 		print("ты угадал")
 		break
