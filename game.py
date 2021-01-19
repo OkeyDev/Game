@@ -4,7 +4,7 @@ def NormalLevel():
 	randomNum = random.randint(0,1000)
 	while True:
 		try:
-			number = int(input("Введите колво подписчиков на канале, от 0 до 1000 \n"))
+			number = int(input("Введите случайное число, от 0 до 1000 \n"))
 		except ValueError:
 			os.system("echo -e '\e[31mЯ СКАЗАЛ ВВЕСТИ ЧИСЛО!!!!!\e[0m'")
 		except KeyboardInterrupt:
@@ -16,9 +16,9 @@ def NormalLevel():
 				os.system("echo -e '\e[1;37mПоздравляю, ты угадал\e[31m'")
 				break
 			elif number > randomNum:
-				os.system("echo -e '\e[1;33mСпускайся на тренді ютуба'")
+				os.system("echo -e '\e[1;37Меньше'")
 			else:
-				os.system("echo -e '\e[1;34mПоднимайся віше гор'")
+				os.system("echo -e '\e[1;34mБольше'")
 def HardLevel():
 	randomNum = round(random.uniform(0.00,100.00),2)
 	while True:
@@ -34,9 +34,9 @@ def HardLevel():
 				os.system("echo -e '\e[1;37mПоздравляю, ты угадал\e[0m'")
 				break
 			elif number > randomNum:
-				os.system("echo -e '\e[1;33mСпускайся на тренді ютуба'")
+				os.system("echo -e '\e[1;33mМеньше'")
 			else:
-				os.system("echo -e '\e[1;34mПоднимайся віше гор'")
+				os.system("echo -e '\e[1;34mБольше'")
 
 def VeryHardLevel():
 	while True:
@@ -56,7 +56,7 @@ def VeryHardLevel():
 				os.system("echo -e '\e[1;34mСлучайное число: '",)
 				print(randomNum)
 				os.system("echo -e '\e[0m'")
-				os.system("echo -e '\e[1;34mНе угадал,число изменилось\e[0m'")
+				os.system("echo -e '\e[1;34mНе угадал,число изменилось ;)\e[0m'")
 	
 def GetLevel(Level):
 	for i in Level:
